@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  /*
+      default is 16px
+      we want 10 px
+
+      100    => 16
+      x       => 10
+
+      x= 1000 / 16 = 62.5 percentage this will allow user to zoom and increase all sizes as wanted
+  */
+  font-size: 62.5%; /* 1 rem = 10px since this is the root element */
+}
+
+body {
+  box-sizing: border-box;
+}
