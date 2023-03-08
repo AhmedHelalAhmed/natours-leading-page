@@ -1,0 +1,7 @@
+@mixin clearfix {
+  &::after {
+    content: ""; //if not defined then this element will not show on the page - it is empty because we don't want to see it on the page
+    display: table;
+    clear: both;
+  }
+}
