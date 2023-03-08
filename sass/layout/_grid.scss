@@ -3,7 +3,7 @@
   // it is recommended to use max-width instead of width
   // max-width will use the width if the screen has this width otherwise it will use 100%
   max-width: $grid-width;
-  background-color: #eee;
+  //background-color: #eee;
   margin: 0 auto; // auto to center the element
 
   &:not(:last-child) {
@@ -17,8 +17,8 @@
   // ^ start with
   // * contains
   [class^="col-"] {
-    background-color: orangered;
-    color: white;
+    //background-color: orangered;
+    //color: white;
     text-align: center;
     float: left;
 
