@@ -1,0 +1,46 @@
+.composition {
+  position: relative; // this is the reference
+  &__photo {
+    width: 55%; // good point here the percentage should define images with percentage
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+    border-radius: 2px;
+    // it will be place according to a reference and
+    // this reference is the first parent that has position set to something
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem;
+
+    &--p1 {
+      left: 0;
+      top: -2rem;
+    }
+
+    &--p2 {
+      right: 0;
+      top: 2rem;
+    }
+
+    &--p3 {
+      left: 20%; // good point here the percentage
+      top: 10rem;
+    }
+
+
+    &:hover {
+      outline: 1.5rem solid $color-primary;
+      transform: scale(1.05) translateY(-.5rem);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+      z-index: 20;
+
+    }
+
+  }
+
+  // .composition:hover composition__photo:(hover)
+  // select the composition photo which is not hovered.
+  // very tricky here
+  &:hover &__photo:not(:hover) {
+    transform: scale(.95);
+  }
+}
