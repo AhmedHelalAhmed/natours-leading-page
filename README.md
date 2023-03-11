@@ -1,4 +1,9 @@
 # Landing page for natours
+## Technologies
+- HTML5
+- SASS (scss)
+- Desktop first
+- Responsive images
 
 ## Requirements
 
