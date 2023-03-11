@@ -4,6 +4,7 @@
 - SASS (scss)
 - Desktop first
 - Responsive images
+- Block Element Modifier (BEM)
 
 ## Requirements
 
