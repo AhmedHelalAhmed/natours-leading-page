@@ -13,6 +13,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    -webkit-backface-visibility: hidden;//prefix must be in the first
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden; // to keep the rounded radius
