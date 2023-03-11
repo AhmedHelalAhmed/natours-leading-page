@@ -136,10 +136,7 @@
 
   // back side styling
   &__cta {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @include absCenter;
     width: 90%;
     text-align: center;
   }
@@ -161,7 +158,8 @@
   }
 
   //@include respond(tab-port) {
-  @media only screen and (max-width: 56.25em),
+  @media only screen and (max-width: 56.25em), // to solve the issue with ipad => we need to use only screen
+    // [hover: none] : any device that use touch as primary input
   only screen and (hover: none) {
 
     height: auto;
