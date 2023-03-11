@@ -36,7 +36,7 @@
       // to define where the content flow around the element
       -webkit-shape-outside: circle(50% at 50% 50%); // to support safari
       shape-outside: circle(50% at 50% 50%); // support chrome
-      border-radius: none;
+      border-radius: unset;
     }
 
 
